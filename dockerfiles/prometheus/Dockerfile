@@ -35,7 +35,7 @@ USER prometheus
 ENTRYPOINT /usr/local/bin/prometheus \ 
             --config.file /etc/prometheus/prometheus.yml \ 
             --storage.tsdb.path /var/lib/prometheus/ \
-            --web.console.libraries=/usr/share/prometheus/console_libraries \
-            --web.console.templates=/usr/share/prometheus/consoles
+            --web.console.libraries=/etc/prometheus/console_libraries \
+            --web.console.templates=/etc/prometheus/consoles
 
 EXPOSE 9090
